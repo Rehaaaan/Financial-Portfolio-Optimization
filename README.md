@@ -110,17 +110,26 @@ This project focuses on financial portfolio optimization using historical stock 
 
 ## Visuals
 
-1. **Portfolio Returns vs. Volatility:**
-   - Scatter plot of 5000 random portfolios showing the relationship between expected returns and volatility.
+### Phase 1: Financial Portfolio Optimization
 
-2. **Optimal Portfolios:**
-   - Highlighting portfolios with maximum return and minimum volatility.
+1. **Portfolio Returns vs. Volatility Scatter Plot:**
+   - Scatter plot showing the relationship between expected returns and volatility for 5000 randomly generated portfolios using Markowitz Mean-Variance Optimization.
+   - **Purpose:** Visualizes the trade-off between risk (volatility) and reward (returns) when constructing an investment portfolio.
 
-3. **Correlation Matrix:**
+2. **Correlation Matrix Heatmap:**
    - Heatmap displaying the correlations between different assets in the portfolio.
+   - **Purpose:** Provides insights into how different assets move in relation to each other, aiding in diversification strategies and risk management.
 
-4. **LSTM Stock Price Predictions:**
-   - Plot showing actual and predicted stock prices using LSTM.
+3. **Portfolio Optimization with the MPT:**
+   - Scatter plot of 5000 random portfolios showing the relationship between expected returns and volatility, highlighting portfolios with maximum return and minimum volatility.
+   - **Purpose:** Demonstrates the application of Modern Portfolio Theory (MPT) to optimize portfolios based on historical data analysis.
+
+### Phase 2: Stock Price Prediction using LSTM
+
+1. **Actual vs. Predicted Stock Prices Plot:**
+   - Line plot comparing the actual closing prices of stocks with their predicted prices generated using the LSTM model.
+   - **Purpose:** Evaluates the performance of the LSTM model in predicting stock prices and visually illustrates the accuracy of the predictions over time.
+
 
 ## Results
 
