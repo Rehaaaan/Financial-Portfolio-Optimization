@@ -1,19 +1,23 @@
-# Financial Portfolio Optimization Project
+# Financial Portfolio Optimization
 <img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/FinancialCover.jpeg' />
-
-
-# Financial Portfolio Optimization Project
 
 ## Table of Contents
 
+- [Directory Structure](#directory-structure)
 - [Project Overview](#project-overview)
 - [Project Approach](#project-approach)
   - [Phase 1](#phase-1)
   - [Phase 2](#phase-2)
 - [Visuals](#visuals)
 - [Results](#results)
-- [Directory Structure](#directory-structure)
+- [Conclusion](#Conclusion)
 - [Contact Information](#contact-information)
+
+## Directory Structure
+
+- `notebook/`: Jupyter notebooks with detailed analysis.
+- `reports/`: Business intelligence reports and dashboards.
+- `visualizations/`: All generated visualizations.
 
 ## Project Overview
 
@@ -65,7 +69,7 @@ This project focuses on financial portfolio optimization using historical stock 
      ```
 
 5. **Data Visualization:**
-   - Use Excel and Tableau to create visualizations of portfolio performance and risk-return analysis.
+   - Use Python and Tableau to create visualizations of portfolio performance and risk-return analysis.
    - Develop an interactive dashboard in Tableau displaying the optimized portfolio and risk-return trade-offs.
 
 ### Phase 2
@@ -115,46 +119,95 @@ This project focuses on financial portfolio optimization using historical stock 
 1. **Portfolio Returns vs. Volatility Scatter Plot:**
    - Scatter plot showing the relationship between expected returns and volatility for 5000 randomly generated portfolios using Markowitz Mean-Variance Optimization.
    - **Purpose:** Visualizes the trade-off between risk (volatility) and reward (returns) when constructing an investment portfolio.
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/Return%20vs%20Volatility.png' align = 'center'/>
 
-2. **Correlation Matrix Heatmap:**
-   - Heatmap displaying the correlations between different assets in the portfolio.
-   - **Purpose:** Provides insights into how different assets move in relation to each other, aiding in diversification strategies and risk management.
-
-3. **Portfolio Optimization with the MPT:**
+2. **Portfolio Optimization with the MPT:**
    - Scatter plot of 5000 random portfolios showing the relationship between expected returns and volatility, highlighting portfolios with maximum return and minimum volatility.
    - **Purpose:** Demonstrates the application of Modern Portfolio Theory (MPT) to optimize portfolios based on historical data analysis.
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/Portfolio%20Optimisation%20with%20the%20MPT.png' align = 'center'/>
+
+3. **Correlation Matrix Heatmap:**
+   - Heatmap displaying the correlations between different assets in the portfolio.
+   - **Purpose:** Provides insights into how different assets move in relation to each other, aiding in diversification strategies and risk management.
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/heatmap.png' align = 'center'/>
 
 ### Phase 2: Stock Price Prediction using LSTM
 
 1. **Actual vs. Predicted Stock Prices Plot:**
    - Line plot comparing the actual closing prices of stocks with their predicted prices generated using the LSTM model.
    - **Purpose:** Evaluates the performance of the LSTM model in predicting stock prices and visually illustrates the accuracy of the predictions over time.
-
+   
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/newplot.png' />
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/newplot%20(1).png' />
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/newplot%20(2).png' />
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/newplot%20(3).png' />
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/newplot%20(4).png' />
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/newplot%20(5).png' />
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/newplot%20(6).png' />
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/newplot%20(7).png' />
+<img src='https://github.com/Rehaaaan/Financial-Portfolio-Optimization/blob/main/visualizations/newplot%20(8).png' />
 
 ## Results
 
 - **Maximum Return Portfolio:**
-  - Return: xx%
-  - Volatility: xx%
-  - Asset Weights: [weights]
+  - Return: 34.803%
+  - Volatility: 40.526%
+  - Asset Weights:
+
+|index|Returns|Volatility|COALINDIA\.NS|HEROMOTOCO\.NS|ITC\.NS|LT\.NS|NCC\.NS|
+|---|---|---|---|---|---|---|---|
+|maximum Return|34.803%|40.526%|21.586%|7.557%|2.741%|1.994%|66.122%|
+
 
 - **Minimum Volatility Portfolio:**
-  - Return: xx%
-  - Volatility: xx%
-  - Asset Weights: [weights]
+  - Return: 20.574%
+  - Volatility: 	20.714%
+  - Asset Weights:
 
-- **Correlation Matrix:**
-  - Visual representation of asset correlations.
+|index|Returns|Volatility|COALINDIA\.NS|HEROMOTOCO\.NS|ITC\.NS|LT\.NS|NCC\.NS|
+|---|---|---|---|---|---|---|---|
+|minimun risk|20.574%|20.714%|13.628%|24.792%|41.702%|19.833%|0.045%|
 
 - **LSTM Prediction Performance:**
-  - Root Mean Squared Error (RMSE): xx
 
-## Directory Structure
+| Asset         | RMSE    |
+|---------------|---------|
+| COALINDIA.NS  | 15.899  |
+| HEROMOTOCO.NS | 157.722 |
+| ITC.NS        | 15.966  |
+| LT.NS         | 119.960 |
+| NCC.NS        | 19.992  |
+| ONGC.NS       | 39.011  |
+| RELIANCE.NS   | 51.337  |
+| SBIN.NS       | 32.389  |
+| WIPRO.NS      | 33.126  |
 
-- `data/`: Raw and cleaned datasets.
-- `notebook/`: Jupyter notebooks with detailed analysis.
-- `reports/`: Business intelligence reports and dashboards.
-- `visualizations/`: All generated visualizations.
+## Conclusion
+
+Based on the analysis and results obtained from the financial portfolio optimization project, here are the key conclusions:
+
+1. **Portfolio Optimization Insights:**
+   - The project utilized Modern Portfolio Theory (MPT) to optimize portfolios based on historical data of selected assets.
+   - Through Markowitz Mean-Variance Optimization, portfolios were constructed to balance risk (volatility) and reward (returns).
+
+2. **Performance Metrics:**
+   - **Maximum Return Portfolio:** Achieved a return of 34.803% with a corresponding volatility of 40.526%. The asset weights for this portfolio were predominantly allocated to \(COALINDIA.NS\) (21.586%), \(HEROMOTOCO.NS\) (7.557%), \(ITC.NS\) (2.741%), \(LT.NS\) (1.994%), and \(NCC.NS\) (66.122%).
+   - **Minimum Risk Portfolio:** Minimized volatility to 20.714%, with assets primarily allocated to \(ITC.NS\) (13.628%), \(LT.NS\) (24.792%), and \(NCC.NS\) (41.702%), while \(HEROMOTOCO.NS\), \(COALINDIA.NS\), and \(SBIN.NS\) had smaller weights.
+
+3. **Stock Price Prediction:**
+   - Implemented LSTM models to predict stock prices for individual assets.
+   - Evaluated model performance using Root Mean Squared Error (RMSE), with varying levels of accuracy observed across different assets (e.g., \(HEROMOTOCO.NS\) with RMSE of 157.722 and \(ITC.NS\) with RMSE of 15.966).
+
+4. **Visual Analysis:**
+   - Visualized the relationships between returns and volatility using scatter plots for portfolio optimization.
+   - Utilized correlation matrices to understand asset interdependencies and diversification opportunities.
+
+5. **Next Steps:**
+   - **Refinement:** Further refine predictive models and optimization strategies to improve accuracy and robustness.
+   - **Implementation:** Implement optimized portfolios in real-world investment scenarios, considering market conditions and investor preferences.
+   - **Monitoring:** Continuously monitor and adjust portfolios based on updated data and market trends to maintain optimal performance.
+
+Overall, the project demonstrated effective use of quantitative methods and machine learning techniques to optimize financial portfolios, offering actionable insights for portfolio managers and investors aiming to achieve desired financial objectives while managing risks effectively.
 
 ## Contact Information
 
